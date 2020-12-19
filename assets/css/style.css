@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.title{
+  text-align: center;
+  margin-top: 50px;
+  word-spacing: 0.5em;
+    
+}
+p{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.frase > p{
+  text-align: center;
+  font-weight: bold;
+  color: #cc3300;
+  letter-spacing: 0.5em; 
+  word-spacing: 0.5em;
+}
+
+
+h2{
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.portfolio {
+  max-width: 1000px; /* modificar aqui */
+  margin: auto;
+  
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.row,
+.row > .column {
+  padding: 10px;
+}
+.row > .column> .content> img{
+
+  /* max-width: 900px; */
+  height: 350px;
+  width: 500px; /* não ta pegando daqui*/
+} 
+.row > .column> h3{
+  text-align: center;
+}
+.column {
+    float: left;
+    width: 20%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.frase-yi{
+  margin: 60px 0px;
+  text-align: center;
+  font-weight: bold;
+  color: #cc3300;
+  letter-spacing: 0.5em; word-spacing: 0.5em
+  
+}
+.content-yi > img{
+  align-items: center;
+}
+.links{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+a{
+  padding: 5px;
+  text-decoration: none;
+  color: #cc3300;
+  font-weight: bold;
+  font-family: 'roboto';
+  border-radius: 8%;
+  margin: 0 10px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+footer{
+  text-align: center;
+  height: 150px;
+  background: #11110d;
+  width: 101%;
+  margin: -0% -1%;
+  margin-bottom: -1%;
+}
+
+.copyright{
+  padding: 30px;
+  margin-top: 20px;
+  color: #ffb366;
+}
