@@ -6,17 +6,24 @@
       <!-- css -->
       <link rel="stylesheet" href="./assets/css/style.css">
 
-  </head>
+  </head> 
   <body>
+    <div class="modal">
+      <div class="modal_content">
+        <img src="./assets/img/804ESYi.jpg" id="modal_img">
+      </div>
+      <span id="bt_close">&times;</span>
+    </div>
+
       <h1 class="title">TRAJANO, Rafaella .</h1>
-      <p>
-          <div class="frase">
-              <p>"EGO RAFAELLA SUM."</p> 
-          </div>
-      </p>
+     
+      <div class="frase">
+          <p>"EGO RAFAELLA SUM."</p> 
+      </div>
+      
       <p>Bacharel em Sistemas de Informação,
           Artista Digital e Professora de Reforço.<br>
-          Especialidades: Engenharia de Software, Java Android,
+          Especialidades: Front-End, Java Android,
           Autodesk Sketchbook e GIMP.<br>
           <br>
           Minhas artes estarão aqui em um site feito por mim.
@@ -32,30 +39,32 @@
       <div class="row">
         <div class="column">
           <div class="content">
-            <img src="https://cdnb.artstation.com/p/assets/images/images/030/615/529/large/rafaella-trajano-1080psyi2.jpg?1601136608" alt="" style="width:100%">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/030/615/529/large/rafaella-trajano-1080psyi2.jpg?1601136608" class="small_img" alt="" style="width:100%">
             <h3>PsyOps Yi</h3>
-            <p>Lorem ipsum..</p>
+            <p>Arte/Wallpaper da skin Psy Ops Master Yi, para ser usada em celulares.</p>
           </div>
         </div>
         <div class="column">
           <div class="content">
-            <img src="https://cdna.artstation.com/p/assets/images/images/026/984/246/large/rafaella-trajano-1020soraka.jpg?1590267043" alt="" style="width:100%">
+            <img src="https://cdna.artstation.com/p/assets/images/images/026/984/246/large/rafaella-trajano-1020soraka.jpg?1590267043" class="small_img" alt="" style="width:100%">
             <h3>Nightbringer Soraka</h3>
-            <p>Lorem ipsum..</p>
+            <p>Arte da skin Nightbringer Soraka saindo das montanhas com o seu poder
+              divino.
+            </p>
           </div>
         </div>
         <div class="column">
           <div class="content">
-            <img src="https://cdna.artstation.com/p/assets/images/images/020/402/724/large/rafaella-trajano-860wppyi.jpg?1567630342" alt="" style="width:100%">
+            <img src="https://cdna.artstation.com/p/assets/images/images/020/402/724/large/rafaella-trajano-860wppyi.jpg?1567630342" class="small_img" alt="" style="width:100%">
             <h3>Eternal Sword Yi</h3>
             <p>Fanart da skin Yi Espada Eterna.</p>
           </div>
         </div>
         <div class="column">
           <div class="content">
-            <img src="https://cdnb.artstation.com/p/assets/images/images/020/401/851/large/rafaella-trajano-758soraka.jpg?1567628387" alt="" style="width:100%">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/020/401/851/large/rafaella-trajano-758soraka.jpg?1567628387" class="small_img" alt="" style="width:100%">
             <h3>W. Wonder Soraka</h3>
-            <p>Lorem ipsum..</p>
+            <p>Fanart da skin Winter Wonder Soraka.</p>
           </div>
         </div>
       </div>
@@ -63,9 +72,11 @@
           "MY BLADE IS YOURS."
       </div>
       <div class="content-yi">
-        <img src="https://cdnb.artstation.com/p/assets/images/images/020/401/767/large/rafaella-trajano-758yi.jpg?1567628136" alt="" style="width:100%">
+        <img src="https://cdnb.artstation.com/p/assets/images/images/020/401/767/large/rafaella-trajano-758yi.jpg?1567628136" class="small_img" alt="" style="width:100%">
         <h3>First work on stream: PROJECT: Yi</h3>
-        <p>Lorem ipsum..</p>
+        <p>Esse foi o meu trabalho feito nas lives na Twitch. Feito no Autodesk Sketchbook,
+          essa arte demandou 2 lives para ser concluída e está no tamanho para wallpaper.
+        </p>
       </div>
       <div class="finalizacao">
         <p>Enfim, espero que tenha gostado das artes postadas aqui. Cada arte foi feita com o maior
@@ -84,11 +95,39 @@
 
   <footer>
     <div class="copyright">
-      TRAJANO, Rafaella;2020.
+      <p>TRAJANO, Rafaella;2020.</p>
       <p>League of Legends é da empresa Riot Games e eu apenas fiz as artes. 
         Caso queira compartilhar, utilize o link da arte ou entre em contato com o meu Twitter.</p>
     </div>
       
   </footer>
+
+  
+  <script src="./assets/js/modal.js"></script>
+  <!-- <script>
+    // Declarando Variaveis
+    let imagens= document.querySelectorAll('.small_img');
+    let modal = document.querySelector('.modal');
+    let modalImg = document.querySelector('#modal_img');
+    let btClose = document.querySelector('#bt_close');
+    let srcVal="";
+    console.log(imagens);
+    // percorre todas as imagens e adiciona o evento de click
+    for(let i =0; i<imagens.length;i++){
+        imagens[i].addEventListener('click',function(){
+            
+            srcVal = imagens[i].getAttribute('src');
+            modalImg.setAttribute('src', srcVal);
+            modal.classList.toggle('modal_active');
+        });
+        
+    }
+
+    // botão fechar usa o toggle para alternar em ativo ou não
+    btClose.addEventListener('click', function(){
+        modal.classList.toggle('modal_active');
+    });
+
+  </script> -->
   </body>
 </html>
