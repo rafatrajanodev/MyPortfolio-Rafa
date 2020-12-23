@@ -14,10 +14,12 @@
 }
 body{
   font-family: 'Roboto', sans-serif;
-  background: url(../img/BGPNG.png);
+  background: url(../img/BGPNG1.png);
   background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .title{
   text-align: center;
