@@ -1,0 +1,15 @@
+@media(max-width: 768px){
+    .apresentacao{
+        padding-left: 6rem;
+        padding-right: 6rem;
+        background: red;
+    }
+    .content-yi{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .finalizacao{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
